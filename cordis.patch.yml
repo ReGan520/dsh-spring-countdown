@@ -1,0 +1,14 @@
+# dsh-spring-countdown 的 bundle patch 层。
+#
+# 通过 `dsh plugin --profile <name> add <本目录>` 安装时，dsh 看到 package.json
+# 的 dsh.bundle 声明，会把本包追加进 dsh.profile.bundles，并在启动时合并这一层，
+# 把插件行插进配置树。id 稳定，后续层可按 id 覆盖它的配置。
+#
+# 本地调试（不安装、不打包）时不要用这个文件，改用绝对路径的临时 overlay：
+#   - insert:
+#       - id: spring-countdown
+#         name: '/绝对路径/dsh-spring-countdown/lib/index.js'
+# 然后 dsh web --patch ./scratch.yml
+- insert:
+    - id: spring-countdown
+      name: 'dsh-spring-countdown'
