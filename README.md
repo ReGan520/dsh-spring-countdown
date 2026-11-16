@@ -82,10 +82,10 @@ dsh-spring-countdown/
 **从 GitHub 仓库安装**（插件市场的一键安装走的也是这条）：
 
 ```bash
-dsh plugin --profile desktop add github:OWNER/dsh-spring-countdown
+dsh plugin --profile desktop add github:ReGan520/dsh-spring-countdown
 ```
 
-把 `OWNER` 换成仓库所属账号。本包是纯 JS，没有构建步骤，不需要授权 `prepare` 脚本。
+本包是纯 JS，没有构建步骤，不需要授权 `prepare` 脚本。
 
 **给自己（要改代码）**：用 checkout 目录安装，改完重启即生效，不必重装。
 
